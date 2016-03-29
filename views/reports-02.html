@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>GroundHog</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/sb-admin.css" rel="stylesheet">
+<link href="css/styles-app.css" rel="stylesheet">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper"> 
+  
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">GroundHog</a> </div>
+    <!-- Top Menu Items -->
+    <div class="top-title">Welcome <strong>Paul</strong>, You have 3 notifications</div>
+    <ul class="nav navbar-right top-nav">
+      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/ger-icon.png" alt="user"/></a>
+        <ul class="dropdown-menu">
+          <li class="icon-drop"></li>
+          <li> <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a> </li>
+        </ul>
+      </li>
+      <li class="dropdown"> <a href="#" class="dropdown-toggle my-dropdown" data-toggle="dropdown"><img src="images/bell-icon.png" alt="bell"/></a>
+        <ul class="dropdown-menu alert-dropdown">
+          <li class="icon-drop"></li>
+          <li> <a href="#">Dr Alexander John, Dental Surgeon, has applied to your job posting.<span>2 hours ago</span></a> </li>
+          <li> <a href="#">Dr Alexander John, Dental Surgeon, has applied to your job posting.<span>2 hours ago</span></a> </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li class="admin-pic"> <img src="images/Oval 1.png" alt="ovel" />
+          <h4>Paul Langdon</h4>
+          <p>Admin</p>
+        </li>
+        <li><a href="index.html"><img src="images/home-icon.png" class="left-nav-icon" alt="home"/> Dashboard</a> </li>
+        <li> <a href="javascript:void(0)"><img src="images/appli-icon.png" class="left-nav-icon" alt="Applicants"/> Users</a> </li>
+        <li class="active"> <a href="reports.html"><img src="images/reports-icon.png" class="left-nav-icon" alt="Reports"/> Reports</a> </li>
+        <li> <a href="machines.html"><img src="images/machines.png" class="left-nav-icon" alt="Subscription"/> Machines</a> </li>
+        <li> <a href="javascript:void(0)"><img src="images/calendar-icon.png" class="left-nav-icon" alt="Subscription"/> Manage App</a> </li>
+        <li> <a href="javascript:void(0)"><img src="images/logout-icon.png" class="left-nav-icon" alt="Logout"/> Logout</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </nav>
+  <div id="page-wrapper">
+    <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
+      <div class="row"> </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="row">
+        <button class="btn bg-btn-green" type="button">DOWNLOAD</button>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <!--contener-main margin-top-padd start-->
+    <div class="contener-main margin-top-padd">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h4>Aaron Shannon</h4>
+        <form id="add-machines">
+          <table width="600" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="35%"><p>Employee id</p></td>
+                <td>:</td>
+                <td><strong>12238723</strong></td>
+              </tr>
+              <tr>
+                <td><p>Role</p></td>
+                <td>:</td>
+                <td><strong>Operator</strong></td>
+              </tr>
+              <tr>
+                <td><p>Machine</p></td>
+                <td>:</td>
+                <td><strong>M 2323</strong></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Date</p></td>
+                <td valign="top">:</td>
+                <td><strong>Last Update on 12/5/2016, 6 am</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+    <!--contener-main margin-top-padd End--> 
+    <!-- main-tabs-02 start-->
+    <div class="main-tabs-02 report-tab">
+      <div> 
+        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" ><a href="#forms" aria-controls="Forms" role="tab" data-toggle="tab">Forms</a></li>
+          <li role="presentation"><a href="#tasks" aria-controls="tasks" role="tab" data-toggle="tab">Tasks</a></li>
+          <li role="presentation" class="active"><a href="#selfie" aria-controls="Selfie" role="tab" data-toggle="tab">Selfie</a></li>
+          <li role="presentation"><a href="#timelog" aria-controls="timelog" role="tab" data-toggle="tab">Timelog</a></li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content"> 
+          <!-- tab ops start-->
+          <div role="tabpanel" class="tab-pane" id="forms">
+            <div class="tab-top-nav report-top">
+              <ul>
+                <li><span>31</span><br/>
+                  COMPLETED TASKS<br/>
+                  In past month</li>
+                <li><span>28</span><br/>
+                  TASKS TO COMPLETE<br/>
+                  In next 7 days</li>
+              </ul>
+              
+            </div>
+            
+            <div class="clear"></div>
+            <div class="contener-main main-scrol">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="border-bottom report-table">
+                  <tbody>
+                    <tr>
+                      <td width="15%"><a class="red-color">HIGH</a></td>
+                      <td width="35%">Fix air vent near muck bay 4</td>
+                      <td width="35%">Assigned to Jim Taylor, Technician</td>
+                      <td width="15%" valign="top" class="text-center"><span>New</span><br/>Due: 1/4</td>
+                    </tr>
+                    <tr>
+                      <td width="15%"><a class="orange-color">MED</a></td>
+                      <td width="35%">Fix air vent near muck bay 4</td>
+                      <td width="35%">Assigned to Jim Taylor, Technician</td>
+                      <td width="15%" valign="top" class="text-center"><span>New</span><br/>Due: 1/4</td>
+                    </tr>
+                    <tr>
+                      <td width="15%"><a class="red-color">MED</a></td>
+                      <td width="35%">Fix air vent near muck bay 4</td>
+                      <td width="35%">Assigned to Jim Taylor, Technician</td>
+                      <td width="15%" valign="top" class="text-center"><span>New</span><br/>Due: 1/4</td>
+                    </tr>
+                    <tr>
+                      <td width="15%"><a class="red-color">HIGH</a></td>
+                      <td width="35%">Fix air vent near muck bay 4</td>
+                      <td width="35%">Assigned to Jim Taylor, Technician</td>
+                      <td width="15%" valign="top" class="text-center"><span>New</span><br/>Due: 1/4</td>
+                    </tr>
+                    <tr>
+                      <td width="15%"><a class="red-color">HIGH</a></td>
+                      <td width="35%">Fix air vent near muck bay 4</td>
+                      <td width="35%">Assigned to Jim Taylor, Technician</td>
+                      <td width="15%" valign="top" class="text-center"><span>New</span><br/>Due: 1/4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <!-- tab ops End--> 
+          <!-- tab tasks start-->
+          <div role="tabpanel" class="tab-pane" id="tasks">
+          
+            <div class="tab-top-nav">
+            <a href="#" class="back-btn">BACK</a>
+            <div class="task-ul-list">
+            	<ul>
+                	<li><input type="checkbox"  name="cb" value="">
+                        <label for="cb1"></label>New</li>
+                        <li><input type="checkbox"  name="cb" value="">
+                        <label for="cb1"></label>In Progress</li>
+                        <li><input type="checkbox"  name="cb" value="">
+                        <label for="cb1"></label>In Progress</li>
+                        
+                </ul>
+            </div>
+            </div>
+            <div class="clear"></div>
+            <div class="contener-main margin-top-padd">
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h4>Task Title</h4>
+        <div id="add-machines">
+          <table width="600" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="35%"><p>Assigned to</p></td>
+                <td>:</td>
+                <td><strong>Paul Wilson</strong></td>
+              </tr>
+              <tr>
+                <td><p>Created on</p></td>
+                <td>:</td>
+                <td><strong>12/02/2015</strong></td>
+              </tr>
+              <tr>
+                <td><p>Due on</p></td>
+                <td>:</td>
+                <td><strong>02/02/2016</strong></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Priority</p></td>
+                <td valign="top">:</td>
+                <td><strong>HIGH</strong></td>
+              </tr>
+               <tr>
+                <td valign="top"><p>Notes:</p></td>
+                <td valign="top">:</td>
+                <td><span>I must explain to you how all this mistaken idea of denouncing pleasure
+and praising pain was born. I will give you a complete account</span></td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+        <div class="gal-box">
+        	<h5>Pictures:</h5>
+            <ul>
+            	<li>
+                	<a href="#"><img src="images/image-01.png" alt="icomn"/></a>
+                </li>
+                <li>
+                	<a href="#"><img src="images/image-02.png" alt="icomn"/></a>
+                </li>
+                <li>
+                	<a href="#"><img src="images/image-02.png" alt="icomn"/></a>
+                </li>
+            </ul>
+        </div>
+      </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+          <!-- tab tasks End--> 
+          <!-- tab selfie start-->
+          <div role="tabpanel" class="tab-pane active" id="selfie">
+          <div class="col-md-12 col-sm-12 col-xs-12 salfie-box">
+          	<div class="left-box main-scrol">
+            <h5>Last one month</h5>
+            	<ul>
+                	<li>
+                    	<div class="left-box-txt">
+                        	<p><i class="fa fa-calendar"></i> 1 . 4 . 2015</p>
+                            <div class="gal-box">
+                            	<ul>
+                                	<li>
+                                        <a href="#"><img src="images/image-03.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-04.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-01.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-02.png" alt="icomn"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="left-box-txt">
+                        	<p><i class="fa fa-calendar"></i> 1 . 4 . 2015</p>
+                            <div class="gal-box">
+                            	<ul>
+                                	<li>
+                                        <a href="#"><img src="images/image-02.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-01.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-03.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-04.png" alt="icomn"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="left-box-txt">
+                        	<p><i class="fa fa-calendar"></i> 1 . 4 . 2015</p>
+                            <div class="gal-box">
+                            	<ul>
+                                	<li>
+                                        <a href="#"><img src="images/image-03.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-04.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-01.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-02.png" alt="icomn"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="left-box-txt">
+                        	<p><i class="fa fa-calendar"></i> 1 . 4 . 2015</p>
+                            <div class="gal-box">
+                            	<ul>
+                                	<li>
+                                        <a href="#"><img src="images/image-04.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-02.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-03.png" alt="icomn"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/image-01.png" alt="icomn"/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-box">
+            	<img src="images/image-biz.png" alt="big image"/>
+            </div>
+          </div>
+          </div>
+          <!-- tab selfie End--> 
+           <div role="tabpanel" class="tab-pane" id="timelog">
+           <div class="tab-top-nav">
+            <a href="#" class="back-btn">BACK</a>
+            </div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top-hr">
+      <table width="96%" border="0" cellspacing="0" cellpadding="0" class="top-title-tbl">
+        <tbody>
+          <tr>
+            <th width="25%" valign="top"> DATE</th>
+            <th width="25%" valign="top"> START TIME</th>
+            <th width="50%" valign="top">EQUIPMENT</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+           	<div class="contener-main main-scrol">
+            
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="border-bottom">
+                  <tbody>
+                    <tr>
+                      <td width="25%" valign="top">12/12/2016</td>
+                      <td width="25%" valign="top">04:00 am</td>
+                      <td width="50%" valign="top">M 00023</td>
+                    </tr>
+                   	<tr>
+                      <td width="25%" valign="top">12/12/2016</td>
+                      <td width="25%" valign="top">04:00 am</td>
+                      <td width="50%" valign="top">M 00023</td>
+                    </tr>
+                    <tr>
+                      <td width="25%" valign="top">12/12/2016</td>
+                      <td width="25%" valign="top">04:00 am</td>
+                      <td width="50%" valign="top">M 00023</td>
+                    </tr>
+                    <tr>
+                      <td width="25%" valign="top">12/12/2016</td>
+                      <td width="25%" valign="top">04:00 am</td>
+                      <td width="50%" valign="top">M 00023</td>
+                    </tr>
+                    <tr>
+                      <td width="25%" valign="top">12/12/2016</td>
+                      <td width="25%" valign="top">04:00 am</td>
+                      <td width="50%" valign="top">M 00023</td>
+                    </tr>
+                    <tr>
+                      <td width="25%" valign="top">12/12/2016</td>
+                      <td width="25%" valign="top">04:00 am</td>
+                      <td width="50%" valign="top">M 00023</td>
+                    </tr>
+                    <tr>
+                      <td width="25%" valign="top">12/12/2016</td>
+                      <td width="25%" valign="top">04:00 am</td>
+                      <td width="50%" valign="top">M 00023</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-tabs-02 End-->
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+  <!-- /#page-wrapper --> 
+  
+</div>
+<!-- /#wrapper --> 
+
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script>
+		(function($){
+			$(window).load(function(){
+				
+				$(".main-scrol").mCustomScrollbar({
+					setHeight:360,
+					theme:"dark-3"
+				});
+				
+			});
+		})(jQuery);
+	</script>
+</body>
+</html>

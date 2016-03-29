@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>GroundHog</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/sb-admin.css" rel="stylesheet">
+<link href="css/styles-app.css" rel="stylesheet">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper"> 
+  
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">GroundHog</a> </div>
+    <!-- Top Menu Items -->
+    <div class="top-title">Welcome <strong>Paul</strong>, You have 3 notifications</div>
+    <ul class="nav navbar-right top-nav">
+      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/ger-icon.png" alt="user"/></a>
+        <ul class="dropdown-menu">
+          <li class="icon-drop"></li>
+          <li> <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a> </li>
+        </ul>
+      </li>
+      <li class="dropdown"> <a href="#" class="dropdown-toggle my-dropdown" data-toggle="dropdown"><img src="images/bell-icon.png" alt="bell"/></a>
+        <ul class="dropdown-menu alert-dropdown">
+          <li class="icon-drop"></li>
+          <li> <a href="#">Dr Alexander John, Dental Surgeon, has applied to your job posting.<span>2 hours ago</span></a> </li>
+          <li> <a href="#">Dr Alexander John, Dental Surgeon, has applied to your job posting.<span>2 hours ago</span></a> </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li class="admin-pic"> <img src="images/Oval 1.png" alt="ovel" />
+          <h4>Paul Langdon</h4>
+          <p>Admin</p>
+        </li>
+        <li><a href="index.html"><img src="images/home-icon.png" class="left-nav-icon" alt="home"/> Dashboard</a> </li>
+        <li> <a href="javascript:void(0)"><img src="images/appli-icon.png" class="left-nav-icon" alt="Applicants"/> Users</a> </li>
+        <li> <a href="reports.html"><img src="images/reports-icon.png" class="left-nav-icon" alt="Reports"/> Reports</a> </li>
+        <li class="active"> <a href="javascript:void(0)"><img src="images/machines.png" class="left-nav-icon" alt="Subscription"/> Machines</a> </li>
+        <li> <a href="javascript:void(0)"><img src="images/calendar-icon.png" class="left-nav-icon" alt="Subscription"/> Manage App</a> </li>
+        <li> <a href="javascript:void(0)"><img src="images/logout-icon.png" class="left-nav-icon" alt="Logout"/> Logout</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </nav>
+  <div id="page-wrapper">
+    <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
+      <div class="row"> </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="row">
+        <button class="btn bg-btn-green" type="button">ADD USER</button>
+        <button class="btn bg-btn-green" type="button">DOWNLOAD</button>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <!--contener-main margin-top-padd start-->
+    <div class="contener-main margin-top-padd">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h4>M 00342</h4>
+        <form id="add-machines">
+          <table width="600" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="35%"><p>Make</p></td>
+                <td>:</td>
+                <td><strong>Abasyse</strong></td>
+              </tr>
+              <tr>
+                <td><p>Model</p></td>
+                <td>:</td>
+                <td><strong>M 223424</strong></td>
+              </tr>
+              <tr>
+                <td><p>Report by</p></td>
+                <td>:</td>
+                <td><strong>Marcel Kracher</strong></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Date</p></td>
+                <td valign="top">:</td>
+                <td><strong>Last Update on 12/5/2016, 6 am</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+    <!--contener-main margin-top-padd End--> 
+    <!-- main-tabs-02 start-->
+    <div class="main-tabs-02">
+      <div> 
+        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#ops" aria-controls="home" role="tab" data-toggle="tab">Ops</a></li>
+          <li role="presentation"><a href="#Pre-op" aria-controls="Pre-Op" role="tab" data-toggle="tab">Pre Op</a></li>
+          <li role="presentation"><a href="#consumables" aria-controls="consumables" role="tab" data-toggle="tab">Consumables</a></li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content"> 
+          <!-- tab ops start-->
+          <div role="tabpanel" class="tab-pane active" id="ops">
+            <div class="tab-top-nav">
+            <a href="#" class="back-btn">BACK</a>
+              <ul>
+                <li><span>3OO</span><br/>
+                  GALLONS OF<br/>
+                  FUEL This month</li>
+                <li><span>3OO</span><br/>
+                  ENGINE HOURS<br/>
+                  This month</li>
+                <li><span>144</span><br/>
+                  TIRES REPLACED<br/>
+                  This year</li>
+              </ul>
+              <div class="top-right-txt">
+                <p>Created on <br/>
+                  20/05/2015,
+                  6:00 am</p>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top-hr">
+              <table width="96%" border="0" cellspacing="0" cellpadding="0" class="top-title-tbl">
+                <tbody>
+                  <tr>
+                    <th width="16%" valign="top"> <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">DATE<img src="images/dwon-arrow.png" alt="dwn"/></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">01/12/2016</a></li>
+                          <li><a href="#">03/12/2016</a></li>
+                          <li><a href="#">04/12/2016</a></li>
+                        </ul>
+                      </div></th>
+                    <th width="13%" valign="top"><strong>TIME</strong></th>
+                    <th width="25%" valign="top"><div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">OPERATOR<img src="images/dwon-arrow.png" alt="dwn"/></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Crystal Silva</a></li>
+                          <li><a href="#">Sara Crawford</a></li>
+                          <li><a href="#">Ronald Spencer</a></li>
+                        </ul>
+                      </div></th>
+                    <th width="46%" valign="top"><strong>STATUS</strong></th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="clear"></div>
+            <div class="contener-main main-scrol">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="border-bottom">
+                  <tbody>
+                    <tr>
+                      <td width="16%" valign="top">01/12/2016</td>
+                      <td width="13%" valign="top">10 : 00</td>
+                      <td width="25%" valign="top">Crystal Silva</td>
+                      <td width="46%" valign="top"><ul class="tree-colors">
+                          <li><span class="green"></span> 32 Passed</li>
+                          <li><span class="orange"></span> 8 Warns</li>
+                          <li><span class="red"></span> 1 Fail</li>
+                        </ul>
+                        <a href="#" class="right-arrow"><img src="images/right-arrow.png" alt="arrow"/></a></td>
+                    </tr>
+                    <tr>
+                      <td width="16%" valign="top">01/12/2016</td>
+                      <td width="13%" valign="top">10 : 00</td>
+                      <td width="25%" valign="top">Crystal Silva</td>
+                      <td width="46%" valign="top"><ul class="tree-colors">
+                          <li><span class="green"></span> 32 Passed</li>
+                          <li><span class="orange"></span> 8 Warns</li>
+                          <li><span class="red"></span> 1 Fail</li>
+                        </ul>
+                        <a href="#" class="right-arrow"><img src="images/right-arrow.png" alt="arrow"/></a></td>
+                    </tr>
+                    <tr>
+                      <td width="16%" valign="top">01/12/2016</td>
+                      <td width="13%" valign="top">10 : 00</td>
+                      <td width="25%" valign="top">Crystal Silva</td>
+                      <td width="46%" valign="top"><ul class="tree-colors">
+                          <li><span class="green"></span> 32 Passed</li>
+                          <li><span class="orange"></span> 8 Warns</li>
+                          <li><span class="red"></span> 1 Fail</li>
+                        </ul>
+                        <a href="#" class="right-arrow"><img src="images/right-arrow.png" alt="arrow"/></a></td>
+                    </tr>
+                    <tr>
+                      <td width="16%" valign="top">01/12/2016</td>
+                      <td width="13%" valign="top">10 : 00</td>
+                      <td width="25%" valign="top">Crystal Silva</td>
+                      <td width="46%" valign="top"><ul class="tree-colors">
+                          <li><span class="green"></span> 32 Passed</li>
+                          <li><span class="orange"></span> 8 Warns</li>
+                          <li><span class="red"></span> 1 Fail</li>
+                        </ul>
+                        <a href="#" class="right-arrow"><img src="images/right-arrow.png" alt="arrow"/></a></td>
+                    </tr>
+                    <tr>
+                      <td width="16%" valign="top">01/12/2016</td>
+                      <td width="13%" valign="top">10 : 00</td>
+                      <td width="25%" valign="top">Crystal Silva</td>
+                      <td width="46%" valign="top"><ul class="tree-colors">
+                          <li><span class="green"></span> 32 Passed</li>
+                          <li><span class="orange"></span> 8 Warns</li>
+                          <li><span class="red"></span> 1 Fail</li>
+                        </ul>
+                        <a href="#" class="right-arrow"><img src="images/right-arrow.png" alt="arrow"/></a></td>
+                    </tr>
+                    <tr>
+                      <td width="16%" valign="top">01/12/2016</td>
+                      <td width="13%" valign="top">10 : 00</td>
+                      <td width="25%" valign="top">Crystal Silva</td>
+                      <td width="46%" valign="top"><ul class="tree-colors">
+                          <li><span class="green"></span> 32 Passed</li>
+                          <li><span class="orange"></span> 8 Warns</li>
+                          <li><span class="red"></span> 1 Fail</li>
+                        </ul>
+                        <a href="#" class="right-arrow"><img src="images/right-arrow.png" alt="arrow"/></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <!-- tab ops End--> 
+          <!-- tab Pre-op start-->
+          <div role="tabpanel" class="tab-pane" id="Pre-op">
+          
+        	<div class="carousel slide article-slide" id="article-photo-carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner cont-slider">
+
+    <div class="item active">
+      <img alt="" title="" src="images/gal-big-img.png">
+    </div>
+    <div class="item">
+      <img alt="" title="" src="images/gal-big-img.png">
+    </div>
+    <div class="item">
+      <img alt="" title="" src="images/gal-big-img.png">
+    </div>
+    <div class="item">
+      <img alt="" title="" src="images/gal-big-img.png">
+    </div>
+  </div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li class="active" data-slide-to="0" data-target="#article-photo-carousel">
+      <img alt="" src="images/gal-icon-01.png">
+    </li>
+    <li class="" data-slide-to="1" data-target="#article-photo-carousel">
+      <img alt="" src="images/gal-icon-01.png">
+    </li>
+    <li class="" data-slide-to="2" data-target="#article-photo-carousel">
+      <img alt="" src="images/gal-icon-01.png">
+    </li>
+    <li class="" data-slide-to="3" data-target="#article-photo-carousel">
+      <img alt="" src="images/gal-icon-01.png">
+    </li>
+  </ol>
+</div>
+          </div>
+          
+          <!-- tab Pre-op End--> 
+          <!-- tab consumables start-->
+          <div role="tabpanel" class="tab-pane" id="consumables">
+          	<div class="tab-top-nav">
+            <a href="#" class="back-btn">BACK</a>
+              <ul>
+                <li><span>3OO</span><br/>
+                  GALLONS OF<br/>
+                  FUEL This month</li>
+                <li><span>3OO</span><br/>
+                  ENGINE HOURS<br/>
+                  This month</li>
+                <li><span>144</span><br/>
+                  TIRES REPLACED<br/>
+                  This year</li>
+              </ul>
+              <div class="top-right-txt">
+                <p>Created on <br/>
+                  20/05/2015,
+                  6:00 am</p>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="contener-main main-scrol">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="border-bottom">
+                  <tbody>
+                    <tr>
+                      <td width="20%" valign="top">12/12/2016</td>
+                      <td width="20%" valign="top">04:00 am</td>
+                      <td width="20%" valign="top">Crystal Silva</td>
+                      <td width="40%" valign="top">Added 32 gallons of fuel</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" valign="top">01/12/2016</td>
+                      <td width="20%" valign="top">05:00 am</td>
+                      <td width="20%" valign="top">Crystal Silva</td>
+                      <td width="40%" valign="top">Added 32 gallons of fuel</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" valign="top">12/12/2016</td>
+                      <td width="20%" valign="top">04:00 am</td>
+                      <td width="20%" valign="top">Crystal Silva</td>
+                      <td width="40%" valign="top">Added 32 gallons of fuel</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" valign="top">12/12/2016</td>
+                      <td width="20%" valign="top">04:00 am</td>
+                      <td width="20%" valign="top">Crystal Silva</td>
+                      <td width="40%" valign="top">Added 32 gallons of fuel</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" valign="top">12/12/2016</td>
+                      <td width="20%" valign="top">04:00 am</td>
+                      <td width="20%" valign="top">Crystal Silva</td>
+                      <td width="40%" valign="top">Added 32 gallons of fuel</td>
+                    </tr>
+                    <tr>
+                      <td width="20%" valign="top">12/12/2016</td>
+                      <td width="20%" valign="top">04:00 am</td>
+                      <td width="20%" valign="top">Crystal Silva</td>
+                      <td width="40%" valign="top">Added 32 gallons of fuel</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <!-- tab consumables End--> 
+        </div>
+      </div>
+    </div>
+    <!-- main-tabs-02 End-->
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+  <!-- /#page-wrapper --> 
+  
+</div>
+<!-- /#wrapper --> 
+
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+<script>
+// Stop carousel
+$('.carousel').carousel({
+  interval: false
+});
+		(function($){
+			$(window).load(function(){
+				
+				$(".main-scrol").mCustomScrollbar({
+					setHeight:360,
+					theme:"dark-3"
+				});
+				
+			});
+		})(jQuery);
+	</script>
+</body>
+</html>

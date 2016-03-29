@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="advertiserAnalytics">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title>GroundHog</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/sb-admin.css" rel="stylesheet">
+<link href="css/styles-app.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body ng-controller="eventController">
+<div id="wrapper"> 
+  
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">GroundHog</a> </div>
+    <!-- Top Menu Items -->
+    <div class="top-title">Welcome <strong>Paul</strong>, You have 3 notifications</div>
+    <ul class="nav navbar-right top-nav">
+      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/ger-icon.png" alt="user"/></a>
+        <ul class="dropdown-menu">
+          <li class="icon-drop"></li>
+          <li> <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a> </li>
+
+        </ul>
+      </li>
+      <li class="dropdown"> <a href="#" class="dropdown-toggle my-dropdown" data-toggle="dropdown"><img src="images/bell-icon.png" alt="bell"/></a>
+        <ul class="dropdown-menu alert-dropdown">
+          <li class="icon-drop"></li>
+          <li> <a href="#">Dr Alexander John, Dental Surgeon, has applied to your job posting.<span>2 hours ago</span></a> </li>
+          <li> <a href="#">Dr Alexander John, Dental Surgeon, has applied to your job posting.<span>2 hours ago</span></a> </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li class="admin-pic"> <img src="images/Oval 1.png" alt="ovel" />
+          <h4>Paul Langdon</h4>
+          <p>Admin</p>
+        </li>
+        <li><a href="index.html"><img src="images/home-icon.png" class="left-nav-icon" alt="home"/> Dashboard</a> </li>
+        <li class="active"> <a href="javascript:void(0)"><img src="images/appli-icon.png" class="left-nav-icon" alt="Applicants"/> Users</a> </li>
+        <li> <a href="reports.html"><img src="images/reports-icon.png" class="left-nav-icon" alt="Reports"/> Reports</a> </li>
+        <li> <a href="machines.html"><img src="images/machines.png" class="left-nav-icon" alt="Subscription"/> Machines</a> </li>
+        <li> <a href="javascript:void(0)"><img src="images/calendar-icon.png" class="left-nav-icon" alt="Subscription"/> Manage App</a> </li>
+        <li> <a href="javascript:void(0)"><img src="images/logout-icon.png" class="left-nav-icon" alt="Logout"/> Logout</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </nav>
+  <div id="page-wrapper">
+    <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
+      <div class="row">
+        <div class="search-query02">
+          <select class="form-control" ng-model="keyword">
+                <option value="conference">Conference</option>
+                <option value="music">Music</option>
+                <option value="religion_spirituality">Spirtuality</option>
+                <option value="religion_spirituality">Religion</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="row">
+        <button class="btn bg-btn-green" type="button" ng-click="search()">SEARCH</button>
+        <button class="btn bg-btn-green" type="button" style="display: none;">SEARCH</button>   
+              
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top-hr">
+    </div>
+    <div class="clear"></div>
+    <div class="contener-main">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin">        
+        <div class="row">
+          <div dir-paginate="event in events| itemsPerPage: 12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border">
+                    <a ng-href="{{event.url}}"><img ng-src="{{event.image_url}}" width="200px" height="200px" />
+                    <span color="black"> <h6 class="font">{{event.start_time |date}}</h6>
+                    <h6 class="font">{{event.title}}</h6></span>
+                    </a>
+                    <hr></hr>
+                    #{{event.eventid}}
+                </div>
+
+          </div>
+        
+        </div>
+        <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="js/dirPagination.tpl.html"></dir-pagination-controls>
+      </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+  <!-- /#page-wrapper --> 
+  
+</div>
+<!-- /#wrapper --> 
+
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="js/controller.js"></script> 
+<script src="js/dirPagination.js"></script>
+</body>
+</html>

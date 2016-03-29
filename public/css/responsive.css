@@ -1,0 +1,100 @@
+
+@media (min-width:1024px) and (max-width: 1260px) {
+.tree-colors li .green, .tree-colors li .orange, .tree-colors li .red {
+	margin-right: 5px;
+}
+.top-title-tbl .dropdown-toggle img {
+	margin-left: 5px;
+}
+.tree-colors li {
+	font-size: 13px;
+}
+.report-btn {
+	width:130px;}
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+.top-title-tbl .dropdown-toggle {
+	font-size: 12px;
+}
+.top-title-tbl .dropdown-toggle img {
+	margin-left: 12px;
+}
+.login-cont {
+	width: 85%;
+}
+.login-top h1 {
+	font-size: 30px;
+}
+.bg-btn-green {
+	font-size: 12px;
+}
+.main-tabs-02 .nav.nav-tabs li a {
+	padding: 0 28px;
+}
+.tree-colors li {
+    margin: 5px 0;
+    width: 100%;
+}
+.report-btn {
+    font-size: 11px !important;
+    width: 85px;
+}
+.dropdown-02 .dropdown-toggle {
+    margin: 9px 5px 0;
+}
+}
+
+@media screen and (max-width: 767px) {
+.navbar-header {
+	width: 100%;
+}
+.nav.navbar-nav.side-nav {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.navbar-inverse .navbar-brand {
+	width: auto;
+}
+.admin-pic {
+	display: none !important;
+}
+nav.navbar {
+	background: #4b4455;
+}
+.nav.navbar-right.top-nav {
+	background: #fff none repeat scroll 0 0;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #FFF;
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+	background-color: #c95c60;
+}
+.top-title {
+	margin: 14px 0 0 10px;
+}
+.top-nav > li {
+	display: inline-block;
+	float: right;
+}
+.top-nav .dropdown-menu {
+	left: -115px;
+}
+.dropdown-menu.alert-dropdown, .dropdown-menu.message-dropdown {
+	left: -157px;
+	width: 200px !important;
+}
+.main-tabs-02 .nav.nav-tabs li a {
+	padding: 0 28px;
+}
+}
+
+@media screen and (max-width: 639px) {
+.top-title {
+	display: none;
+}
+}
+
+@media screen and (max-width: 479px) {
+}
